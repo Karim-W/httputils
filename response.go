@@ -14,7 +14,7 @@ type HttpSuccessResponse struct {
 	Transaction *string     `json:"transaction,omitempty"`
 }
 
-func SuccessRespose(code int, message string, data interface{}, transactionId *string) HttpSuccessResponse {
+func SuccessResponse(code int, message string, data interface{}, transactionId *string) HttpSuccessResponse {
 	return HttpSuccessResponse{
 		Code:        code,
 		Message:     message,
